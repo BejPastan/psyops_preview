@@ -18,8 +18,7 @@ const [emblaRef] = useEmblaCarousel(
   { loop: true, align: 'center' },
   [Autoplay({ delay: 4000, stopOnInteraction: true })]
 )
-
-
+emblaRef;
 </script>
 
 <template>
