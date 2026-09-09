@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import Text from './Text.vue'
 
 withDefaults(
   defineProps<{
-    text: string
-    textEng: string
     type?: 'primary' | 'secondary'
+    onClick?: () => void
   }>(),
   {
     type: 'primary',
@@ -14,8 +12,8 @@ withDefaults(
 </script>
 
 <template>
-  <button class="btn" :class="`btn--${type}`">
-    <Text :text="text" :textEng="textEng" size="label" />
+  <button class="btn" :class="`btn--${type}`" @click="onClick">
+    <slot />
   </button>
 </template>
 
