@@ -10,7 +10,7 @@ import Text from '../components/Text.vue';
 
 <template>
     <div class="header">
-        <Text text="S.I.G.M.A." :size="'title'" :textStyle="'primary'"/>
+        <Text text="OPERACJA S.I.G.M.A." :size="'title'" :textStyle="'primary'"/>
         <Text text="karciana gra szkoleniowa" :size="'header'" :textStyle="'primary'"/>
     </div>
     <div class="content">
