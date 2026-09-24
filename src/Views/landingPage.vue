@@ -18,9 +18,6 @@ import Text from '../components/Text.vue';
             <Pitch/>
         </div>
         <div class="content-container">
-            <Contact/>
-        </div>
-        <div class="content-container">
             <HowToPlay/>
         </div>
         <div class="content-container">
@@ -53,5 +50,6 @@ import Text from '../components/Text.vue';
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: visible !important;
 }
 </style>

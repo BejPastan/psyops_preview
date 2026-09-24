@@ -23,8 +23,6 @@ emblaRef;
 
 <template>
     <div class="prevContainer">
-        <div class="controllArrow"><Text text="&lt;" :size="'header'" :textStyle="'primary'"/></div>
-        
         <div class="carouselContainer">
             <div class="embla" ref="emblaRef">
                 <div class="embla__container">
@@ -34,8 +32,6 @@ emblaRef;
                 </div>
             </div>
         </div>
-
-        <div class="controllArrow"><Text text="&gt;" :size="'header'" :textStyle="'primary'"/></div>
     </div>
 </template>
 
@@ -47,14 +43,16 @@ emblaRef;
     align-items: center;
     justify-content:space-between;
     gap: var(--spacing-lg);
+    overflow-y: visible !important;
 }
 .carouselContainer{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:center;
-    width: calc(100% - 2 * var(--spacing-lg) - 2 * var(--spacing-xxl));
+    width: 100%;
     flex-shrink: 1;
+    overflow-y: visible !important;
 }
 .controllArrow{
     cursor: pointer;
@@ -69,6 +67,8 @@ emblaRef;
     height: 80%;
     object-fit: cover;
     transition: scale 2s ease;
+    overflow-y: visible;
+    transform: translateY(10%);
 }
 .cardImage:hover{
     scale: 1.2;
@@ -76,7 +76,8 @@ emblaRef;
 }
 
 .embla {
-  overflow: hidden;
+  overflow-y: visible !important;
+  overflow-x: hidden;
   height: 100%;
   width: 100%;
   flex-shrink: 1;
@@ -90,5 +91,6 @@ emblaRef;
     height: 352px;
     width: 252px;
     flex-shrink: 0;
+    overflow-y: visible !important;
 }
 </style>
