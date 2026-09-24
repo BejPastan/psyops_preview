@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import CardPrev from '../components/Sections/CardPrev.vue';
-import Contact from '../components/Sections/Contact.vue';
 import HowToPlay from '../components/Sections/HowToPlay.vue';
 import Pitch from '../components/Sections/Pitch.vue';
 import Text from '../components/Text.vue';

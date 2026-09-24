@@ -2,7 +2,6 @@
 import useEmblaCarousel from 'embla-carousel-vue';
 import Autoplay from 'embla-carousel-autoplay';
 
-import Text from '../Text.vue';
 
 const baseImages = [
   '/cardGallery/Card1.png',
