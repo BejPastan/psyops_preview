@@ -88,3 +88,29 @@ body {
   font-family: var(--font-family);
   font-weight: var(--font-weight-base);
 }
+
+/* ---------- Responsive text scaling ----------
+   >1080px    : base sizes (defined in :root above)
+   721-1080px : tablet
+   <=720px    : mobile
+   Keep the narrower query last so it wins the cascade. */
+
+@media (max-width: 1080px) {
+  :root {
+    --text-title: 4rem;
+    --text-header: 2.25rem;
+    --text-header2: 1.75rem;
+    --text-content: 1rem;
+    --text-label: 0.75rem;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --text-title: 3rem;
+    --text-header: 1.75rem;
+    --text-header2: 1.5rem;
+    --text-content: 0.9375rem;
+    --text-label: 0.6875rem;
+  }
+}
